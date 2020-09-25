@@ -359,6 +359,7 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 30px;
 }
 
 .flex__direct {
@@ -449,7 +450,7 @@ h6 {
   background: #FFFFFF;
   border: 1px solid #757575;
   border-radius: 2px;
-  padding: 5px 10px;
+  padding: 10px 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -485,6 +486,8 @@ a {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -514,11 +517,15 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 5px;
+  margin: 5px 5px 50px 5px;
 }
 
 .item label {
   height: 100%;
+}
+
+.mb-5 {
+  margin-bottom: 5px !important;
 }
 
 .item_title {
@@ -530,7 +537,6 @@ a {
 
 .item_body {
   width: 100%;
-  margin-bottom: 50px;
   height: 130px;
 }
 
@@ -545,7 +551,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 .item-label {
@@ -553,7 +559,6 @@ a {
   font-family: 'Source Sans Pro';
   font-size: 15px;
   text-align: center;
-  line-height: 1px;
   padding: 5px;
 }
 
