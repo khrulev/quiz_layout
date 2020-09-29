@@ -9,7 +9,13 @@ $(document).ready(function () {
         let nextPath = '';
         let nextHref = '';
 
-        switch (currentPath) {
+        let idx=0;
+        for (let i=0; i<currentPath.length; i++){
+            if (currentPath.charAt(i)=='/') idx = i;
+        }
+        let lastPage = currentPath.substr(idx);
+
+        switch (lastPage) {
             case '/index.html':
                 nextPath = '/step2.html';
                 nextHref = currentHref.replace(currentPath, nextPath);
