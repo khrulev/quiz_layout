@@ -1,15 +1,17 @@
 $(document).ready(function () {
 
-    // Temporary for DEMO Layout
-    // Function - redirect on 'radio click'
-    $('input[type="radio"]').on('change', function () {
-
+    // Temporary ONLY for DEMO (Layout. Sprint 1)
+    // Callback - Redirect on next demo page
+    const goNextPageDEMO = function (evt) {
+       
+        evt.preventDefault();
+        
         let currentPath = window.location.pathname;
         let nextPath = '';
-
-        let idx=0;
-        for (let i=0; i<currentPath.length; i++){
-            if (currentPath.charAt(i)=='/') idx = i;
+        console.log(currentPath)
+        let idx = 0;
+        for (let i = 0; i < currentPath.length; i++) {
+            if (currentPath.charAt(i) == '/') idx = i;
         }
         let lastPage = currentPath.substr(idx);
 
@@ -47,12 +49,31 @@ $(document).ready(function () {
             case '/step11.html':
                 nextPath = currentPath.replace(lastPage, '/step12.html');
                 break;
+            case '/step12.html':
+                nextPath = currentPath.replace(lastPage, '/step13.html');
+                break;
+            case '/step13.html':
+                nextPath = currentPath.replace(lastPage, '/step14.html');
+                break;
+            case '/step14.html':
+                nextPath = currentPath.replace(lastPage, '/step15.html');
+                break;
+            case '/step15.html':
+                let step = '/step17.html';
+                if (evt.target.id == 'radio-1') step = '/step16.html'
+                nextPath = currentPath.replace(lastPage, step);
+                break;
+            case '/step16.html':
+                nextPath = currentPath.replace(lastPage, '/step17.html');
+                break;
             default:
                 nextPath = '/step2.html';
         }
         window.location.href = window.location.origin + nextPath;
-    });
+    };
 
+    $('input[type="radio"]').on('change', goNextPageDEMO); //ONLY for DEMO 
+    $('button').on('click', goNextPageDEMO); //ONLY for DEMO 
 });
 
 
