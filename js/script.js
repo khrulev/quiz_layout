@@ -18,47 +18,47 @@ $(document).ready(function () {
         switch (lastPage) {
             case '/index.html':
                 nextPath = '/step2.html';
-                nextHref = currentHref.replace(currentPath, nextPath);
+                nextHref = currentHref.replace(lastPage, nextPath);
                 break;
             case '/step2.html':
                 nextPath = '/step3.html';
-                nextHref = currentHref.replace(currentPath, nextPath);
+                nextHref = currentHref.replace(lastPage, nextPath);
                 break;
             case '/step3.html':
                 nextPath = '/step4.html';
-                nextHref = currentHref.replace(currentPath, nextPath);
+                nextHref = currentHref.replace(lastPage, nextPath);
                 break;
             case '/step4.html':
                 nextPath = '/step5.html';
-                nextHref = currentHref.replace(currentPath, nextPath);
+                nextHref = currentHref.replace(lastPage, nextPath);
                 break;
             case '/step5.html':
                 nextPath = '/step6.html';
-                nextHref = currentHref.replace(currentPath, nextPath);
+                nextHref = currentHref.replace(lastPage, nextPath);
                 break;
             case '/step6.html':
                 nextPath = '/step7.html';
-                nextHref = currentHref.replace(currentPath, nextPath);
+                nextHref = currentHref.replace(lastPage, nextPath);
                 break;
             case '/step7.html':
                 nextPath = '/step8.html';
-                nextHref = currentHref.replace(currentPath, nextPath);
+                nextHref = currentHref.replace(lastPage, nextPath);
                 break;
             case '/step8.html':
                 nextPath = '/step9.html';
-                nextHref = currentHref.replace(currentPath, nextPath);
+                nextHref = currentHref.replace(lastPage, nextPath);
                 break;
             case '/step8.html':
                 nextPath = '/step10.html';
-                nextHref = currentHref.replace(currentPath, nextPath);
+                nextHref = currentHref.replace(lastPage, nextPath);
                 break;
             case '/step10.html':
                 nextPath = '/step11.html';
-                nextHref = currentHref.replace(currentPath, nextPath);
+                nextHref = currentHref.replace(lastPage, nextPath);
                 break;
             case '/step11.html':
                 nextPath = '/step12.html';
-                nextHref = currentHref.replace(currentPath, nextPath);
+                nextHref = currentHref.replace(lastPage, nextPath);
                 break;
             default:
                 nextHref = currentHref + 'step2.html';
