@@ -67,7 +67,7 @@ $(document).ready(function () {
                 nextPath = currentPath.replace(lastPage, '/step17.html');
                 break;
             default:
-                nextPath = '/step2.html';
+                nextPath = currentPath + '/step2.html';
         }
         window.location.href = window.location.origin + nextPath;
     };
